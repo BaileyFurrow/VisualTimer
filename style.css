@@ -1,5 +1,13 @@
 * {
   font-size: 32px;
+  text-align: center;
+}
+
+body {
+  min-height: 100vh;
+  display: grid;
+  grid-template-rows: auto 1fr auto;
+  margin-bottom: 0;
 }
 
 h1 {
@@ -46,10 +54,8 @@ input[type=number] {
 }
 
 footer {
-  position: fixed;
-  left: 0;
-  bottom: 0;
   width: 100%;
+  margin: 1rem 0 0;
   background-color: #ddd;
   text-align: center;
   font-size: 12pt;
