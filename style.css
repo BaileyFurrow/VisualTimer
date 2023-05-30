@@ -1,0 +1,78 @@
+* {
+  font-size: 32px;
+}
+
+h1 {
+  font-size: 50pt;
+  border-bottom: 1px solid black;
+}
+
+canvas#timer {
+  padding: 10px;
+  height: 500px;
+}
+
+@media only screen and (max-width: 500px) {
+  canvas#timer {
+    height: initial;
+    width: 100%;
+  }
+}
+
+form * {
+  line-height: 2em;
+}
+
+input[type=number] {
+  padding: 0 0 0 .5em;
+  width: 2.25rem;
+}
+
+#fs {
+  background-color: white;
+  display: inline-block;
+}
+
+#timeText {
+  text-align: center;
+}
+
+.buttons {
+  margin-top: 1rem;
+}
+
+#exitFS {
+  display: none;
+}
+
+footer {
+  position: fixed;
+  left: 0;
+  bottom: 0;
+  width: 100%;
+  background-color: #ddd;
+  text-align: center;
+  font-size: 12pt;
+  padding: 1rem;
+}
+
+/* Style for fullscreen app */
+
+#fs:fullscreen {
+  display: flex;
+  flex-flow: column nowrap;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+}
+
+#fs:fullscreen canvas#timer {
+  height: 80%;
+}
+
+#fs:fullscreen #timeText {
+  font-size: 3rem;
+}
+#fs:fullscreen #exitFS {
+  display: initial;
+}

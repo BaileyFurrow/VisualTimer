@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en-us">
+  <head>
+    <meta charset="UTF-8" />
+    <title>Visual Timer</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+  </head>
+  <body>
+    <h1>Visual Timer</h1>
+    <div id="fs">
+      <canvas id="timer"></canvas>
+      <div id="timeText">0:00</div>
+      <button type="button" id="exitFS" title="Exit Fullscreen">X</button>
+    </div>
+
+    <form action="#" name="timerForm">
+      <input type="number" name="minutes" placeholder="min" min="0" />
+      :
+      <input type="number" name="seconds" placeholder="sec" min="0" max="59" />
+      <span class="colors">
+        <label for="foreground">Foreground:</label>
+        <input type="color" name="foreground" id="foreground-color" value="#0000FF" />
+        <label for="background">Background:</label>
+        <input type="color" name="background" id="background-color" value="#DDDDDD" />
+      </span>
+      <div class="buttons">
+        <button type="submit" id="startTimer">Start</button>
+        <button type="button" id="clear">Clear</button>
+        <button type="button" id="fullscreen">Fullscreen</button>
+      </div>
+    </form>
+    <div id="debug">
+      DEBUGGING
+      <input type="color" id="color1">
+      <input type="color" id="color2">
+    </div>
+    <footer>
+      Copyright &copy; 2023 Bailey Furrow
+    </footer>
+    <script src="VisualTimer.js"></script>
+  </body>
+</html>
