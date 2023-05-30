@@ -82,3 +82,9 @@ footer {
 #fs:fullscreen #exitFS {
   display: initial;
 }
+
+/* Icons */
+
+.ico-gh {
+  background: url("https://github.githubassets.com/favicons/favicon.png");
+}
