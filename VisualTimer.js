@@ -1,3 +1,6 @@
+// A simple Timer web app that shows the timer visually in a circle. Inspired by Time Timer.
+// Author: BaileyFurrow
+
 // This web application contains Alarm clock (Simple) that is licensed under a Creative Commons Attribution license.
 // Source: https://directory.audio/sound-effects/alarms/23085-alarm-clock-simple
 // Author: freesman
